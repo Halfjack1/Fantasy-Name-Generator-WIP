@@ -13,6 +13,8 @@ while True:
   for i in range(0, 10):
     if (race.lower() == "dwarf"):
       names.dwarf(gend)
+    elif race.lower() == "human":
+      names.human(gend)
     else:
       needSet = True
   if needSet == False:
