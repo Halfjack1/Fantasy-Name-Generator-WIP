@@ -9,13 +9,13 @@ while True:
     race = input("Which race?(dwarf, )\n> ")
     gend = input("M or F?\n> ")
     needSet = False
-  switch (lower(race)){
-    case "dwarf":
-      break;
-    default: needSet = True
-      break;
-  }
+  print()
+  for i in range(0, 10):
+    if (race.lower() == "dwarf"):
+      names.dwarf(gend)
+    else:
+      needSet = True
   if needSet == False:
-    setCheck = input("Change settings?(Y or N)\n> ")
-    if setCheck == "Y":
+    setCheck = input("\nChange settings?(Y or N)\n> ")
+    if setCheck.lower() == "y":
       needSet = True
