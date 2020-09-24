@@ -19,4 +19,3 @@ while True:
     setCheck = input("Change settings?(Y or N)\n> ")
     if setCheck == "Y":
       needSet = True
-
