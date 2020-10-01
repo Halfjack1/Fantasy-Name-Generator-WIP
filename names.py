@@ -1,4 +1,5 @@
 import random
+
 def dwarf(gend):
   temp = random.randint(1,3)
   first1 = ["Ba","Brue","Zi","I","U","Kil","Bru","Ka","Gwoi","Fri","Thro","A","Du","Pi"]
@@ -14,7 +15,6 @@ def dwarf(gend):
     last2 = ["killer","slayer","breaker"]
   temp = (random.choice(first1) + random.choice(first2) + " " + random.choice(last1) + random.choice(last2))
   print(temp)
-
 
 def human(gend):
   temp = random.randint(3,6)
@@ -74,5 +74,14 @@ def human(gend):
 def kobold():
   first1 = ["Mee","Ka","Za","Ze","Mo","Ro","Ta","U","I","Ga","Sni","Ho"]
   first2 = ["po","shak","kak","lo","klak","rak","rtos","lax","v","k","x"]
+  temp = random.choice(first1) + random.choice(first2)
+  print(temp)
+
+def goblinoid(gend):
+  first1 = ["Ut", "Mor", "Krev", "Oza", "Drak", "Az"]
+  if gend.lower() == "M":
+    first2 = ["char", "korz", "lek", "luc", "kor", "kral"]
+  else:
+    first2 = ["cha", "kora", "le", "lua", "ra"]
   temp = random.choice(first1) + random.choice(first2)
   print(temp)
