@@ -120,3 +120,16 @@ def dragonborn(gend):
   temp = (random.choice(first1) + random.choice(first2) + " " + random.choice(last1) + random.choice(last2))
   print(temp)
 
+def dragon(gend):
+  first1 = ["Clethtin", "Daar", "Del", "Drache", "Fenken", "Kerr", "Kimba", "Linxaka", "Mya", "Nori", "Ophin", "Prexi", "Shesten", "Turnu", "Verthi", "Yar"]
+  temp1 = random.choice(first1)
+  first2 = ["Clethtin", "Daar", "Del", "Drache", "Fenken", "Kerr", "Kimba", "Linxaka", "Mya", "Nori", "Ophin", "Prexi", "Shesten", "Turnu", "Verthi", "Yar"]
+  if temp1 in first2:
+    first2.remove(temp1)
+  first3 = ["cl", "ch", "d", "k", "k", "d", "ch", "k", "g", "k", "dr", "sh", "dr", "cl", "dr", "ch", "d"]
+  if gend.lower() == "m":
+    first4 = ["an", "ar", "ash", "aar", "esh", "an", "iv", "ash", "en", "arr", "ed","in", "ar", "ash", "inn", "un", "inn"]
+  else:
+    first4 = ["a", "iri", "aar", "eh", "ann", "ilar", "i", "ava", "inn", "ann", "ala", "a", "ora", "a", "a", "it"]
+  temp = temp1 + random.choice(first2).lower() + random.choice(first3) + random.choice(first4)
+  print(temp)
