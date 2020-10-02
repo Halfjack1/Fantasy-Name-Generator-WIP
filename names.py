@@ -83,7 +83,9 @@ def goblinoid(gend):
     first2 = ["char", "korz", "lek", "luc", "kor", "kral"]
   else:
     first2 = ["cha", "kora", "le", "lua", "ra"]
-  temp = random.choice(first1) + random.choice(first2)
+  last1 = ["I", "Irta","Kee", "Be", "Caba", "Ery", "Fo", "Na", "O", "Ru"]
+  last2 = ["llish", "na", "zac", "go", "lig", "llus", "tulk","rgath", "grok","kwurm"]
+  temp = random.choice(first1) + random.choice(first2) + " " + random.choice(last1) + random.choice(last2)
   print(temp)
 
 def elf(gend):
@@ -106,3 +108,15 @@ def halfling(gend):
   last2 = ["gather","barrel","bottle","hill","topple","leaf","gage","cobble","bough"]
   temp = (random.choice(first1) + " " + random.choice(last1) + random.choice(last2))
   print(temp)
+
+def dragonborn(gend):
+  first1 = ["Arjh", "Balas", "Bhar", "Don", "Gh", "Hesk", "Kr", "Medr", "Meh", "Nad", "Pandj", "Patr","Rhog", "Sham", "Shed", "Tarh", "Tor", "Akr", "B", "D", "Farid", "Har", "Flav", "Jher", "K", "Kor", "Mish", "N", "Perr", "S", "Surin", "Thav", "Uadj"]
+  if gend.lower() == "m":
+    first2 = ["an", "ar", "ash", "aar", "esh", "an", "iv", "ash", "en", "arr", "ed","in", "ar", "ash", "inn", "un", "inn"]
+  else:
+    first2 = ["a", "iri", "aar", "eh", "ann", "ilar", "i", "ava", "inn", "ann", "ala", "a", "ora", "a", "a", "it"]
+  last1 = ["Clethtin", "Daar", "Del", "Drache", "Fenken", "Kerr", "Kimba", "Linxaka", "Mya", "Nori", "Ophin", "Prexi", "Shesten", "Turnu", "Verthi", "Yar"]
+  last2 = ["thiallor", "dendrian", "mirev", "dandion", "kabradon", "hylon", "tuul", "sendalor", "stan", "xius", "shtalajiir", "jandilin", "deliath", "roth", "sathurgiesh", "jerit"]
+  temp = (random.choice(first1) + random.choice(first2) + " " + random.choice(last1) + random.choice(last2))
+  print(temp)
+

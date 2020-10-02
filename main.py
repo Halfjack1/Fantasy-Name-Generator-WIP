@@ -6,7 +6,7 @@ last2 = []
 import names
 while True:
   if needSet:
-    race = input("Which race?(dwarf, elf, halfling, human, goblinoid, kobold)\n> ")
+    race = input("Which race?(dragonborn, dwarf, elf, halfling, human, goblinoid, kobold)\n> ")
     if race.lower() != "kobold":
       gend = input("M or F?\n> ")
     needSet = False
@@ -24,6 +24,8 @@ while True:
       names.elf(gend)
     elif race.lower() == "halfling":
       names.halfling(gend)
+    elif race.lower() == "dragonborn":
+      names.dragonborn(gend)
     else:
       needSet = True
   if needSet == False:
