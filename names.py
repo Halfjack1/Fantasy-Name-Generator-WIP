@@ -85,3 +85,24 @@ def goblinoid(gend):
     first2 = ["cha", "kora", "le", "lua", "ra"]
   temp = random.choice(first1) + random.choice(first2)
   print(temp)
+
+def elf(gend):
+  first1 = ["A","Ae","Keyl","Aran","Be","Ber","Car","Dru","Eni","Er","Galin","Had","He","Im","Ivel","Lauc","Mind","Pael","Per","Quar","Riard","Rol","Sovel","Tham","Sil"]
+  if gend.lower() == "m":
+    first2 = ["dran","lar","mil","nis","ust","iro","ric","rian","alis","rdan","evan","ndan","arai","ian","meral","lios","artis","ias","en","ion","on","iss","ior"]
+  else:
+    first2 = ["drie","lthaea","strianna","ndraste","ntinua","thrynna","rel","elynn","silia","losial","elenia","riele","eth","nairra","aqui","astra","aphia"]
+  last1 = ["Ama","Gala","Holi","Ilphel","Lia","Meli","Nai","Sian"," Xilo"]
+  last2 = ["kiir","stacia","nodel","mion","don","amne","lo","scient"]
+  temp = (random.choice(first1) + random.choice(first2) + " " + random.choice(last1) + random.choice(last2))
+  print(temp)
+
+def halfling(gend):
+  if gend.lower() == "m":
+    first1 = ["Alton","Ander","Cade","Corrin","Eldon","Errich","Finnan","Garret","Lindal","Lyle","Merric","Milo","Osborn","Perrin","Reed","Roscoe","Wellby"]
+  else:
+    first1 = ["Andry", "Bree", "Callie", "Cora", "Euphemia","Jillian", "Kithri", "Lavinia", "Lidda", "Merla", "Nedda", "Paela","Portia", "Seraphina", "Shaena", "Trym", "Vani", "Verna"]
+  last1 = ["Brush","Good","Green","High-","hill","Tea","Thorn","Toss","Under"]
+  last2 = ["gather","barrel","bottle","hill","topple","leaf","gage","cobble","bough"]
+  temp = (random.choice(first1) + " " + random.choice(last1) + random.choice(last2))
+  print(temp)
